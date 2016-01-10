@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Product id (pid) - will be HIDDEN - used to pass to other activity -->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ic_launcher"
+            android:id="@+id/imageView" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/pid"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:text="Domanda n°"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/quest"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="6dip"
+                android:layout_gravity="center_horizontal"
+                android:enabled="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textSize="22dp"
+                android:gravity="center"
+                android:text="Prova testo"
+                android:textStyle="bold|italic"
+                android:textColor="#ff555555" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/desc"
+                android:layout_gravity="center_horizontal"
+                android:textSize="18dp"
+                android:text="punti domanda : " />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <!-- Name Label -->
+
+</LinearLayout>
